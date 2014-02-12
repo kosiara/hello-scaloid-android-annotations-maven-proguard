@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="red">Red alert!</string>
+	<string name="app_name">Scaloid example</string>
+    <string name="get_value_from_scala_button_text">Get value from java</string>
+</resources>
