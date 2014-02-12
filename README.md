@@ -9,6 +9,7 @@ In order to run the project correctly you need to configure the project to run s
 
 1. Run mvn clean; mvn package -Prelease
 2. Configure IntelliJ 13 to run with SCALA
+3. Configure IntelliJ to compile Android Annotations
 
 Configure IDE:
 
