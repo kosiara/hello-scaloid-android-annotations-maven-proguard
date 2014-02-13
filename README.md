@@ -16,7 +16,14 @@ Configure IDE:
 http://kosiara87.blogspot.com/2014/02/intellij-13-scaloid-maven-3.html
 http://kosiara87.blogspot.com/2014/02/intellij-13-proguard-android.html
 
-To compile from maven use: <br/>
+To compile <b>from maven</b> use: <br/>
+mvn clean <br/>
+mvn package -f pom_javaOnly.xml <br/>
+mvn package 
+
+
+To compile from maven with apk signing with certificate use: <br/>
 mvn clean <br/>
 mvn package -Prelease -f pom_javaOnly.xml <br/>
-mvn package -Prelease
+mvn package -Prelease <br/><br/>
+Remember to add your keys in ".keystore" directory inside the root directory of the project.
