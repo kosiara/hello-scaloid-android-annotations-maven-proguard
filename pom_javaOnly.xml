@@ -8,26 +8,12 @@
 	<packaging>apk</packaging>
 	<name>Hello Scaloid! for Maven</name>
 
-	<properties>
-		<scala.version>2.10.3</scala.version>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>com.google.android</groupId>
 			<artifactId>android</artifactId>
 			<version>2.2.1</version>
 			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.scala-lang</groupId>
-			<artifactId>scala-library</artifactId>
-			<version>${scala.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.scaloid</groupId>
-			<artifactId>scaloid_2.10</artifactId>
-			<version>3.1-8-RC1</version>
 		</dependency>
 
         <!-- android annotations -->
@@ -48,31 +34,6 @@
 			<id>release</id>
 			<build>
 				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-jarsigner-plugin</artifactId>
-						<version>1.2</version>
-						<executions>
-							<execution>
-								<id>signing</id>
-								<goals>
-									<goal>sign</goal>
-								</goals>
-								<phase>package</phase>
-								<inherited>true</inherited>
-								<configuration>
-									<archiveDirectory></archiveDirectory>
-									<includes>
-										<include>target/*.apk</include>
-									</includes>
-									<keystore>scala-test.keystore</keystore>
-									<storepass>scalatest</storepass>
-									<keypass>scalatest</keypass>
-									<alias>androidscalatest</alias>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
 					<plugin>
 						<groupId>com.jayway.maven.plugins.android.generation2</groupId>
 						<artifactId>android-maven-plugin</artifactId>
@@ -98,20 +59,6 @@
 	</profiles>
 
 	<build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.scala-tools</groupId>
-                    <artifactId>maven-scala-plugin</artifactId>
-                    <version>2.15.2</version>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.1</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-
 		<plugins>
 			<plugin>
 				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
@@ -153,45 +100,6 @@
 			</plugin>
 
 			<plugin>
-				<groupId>org.scala-tools</groupId>
-				<artifactId>maven-scala-plugin</artifactId>
-				<version>2.15.2</version>
-				<configuration>
-					<scalaVersion>${scala.version}</scalaVersion>
-				</configuration>
-				<executions>
-                    <!--<execution>-->
-                        <!--<id>java-compile-first</id>-->
-                        <!--<phase>process-resources</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>add-source</goal>-->
-                            <!--<goal>compile</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-
-                    <execution>
-                        <id>compile</id>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
-                        <phase>compile</phase>
-                    </execution>
-                    <execution>
-                        <id>test-compile</id>
-                        <goals>
-                            <goal>testCompile</goal>
-                        </goals>
-                        <phase>test-compile</phase>
-                    </execution>
-                    <execution>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
-				</executions>
-			</plugin>
-			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
 				<version>1.8</version>
@@ -212,17 +120,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.scala-tools</groupId>
-				<artifactId>maven-scala-plugin</artifactId>
-				<version>2.15.2</version>
-				<configuration>
-					<scalaVersion>${scala.version}</scalaVersion>
-				</configuration>
-			</plugin>
-		</plugins>
-	</reporting>
 </project>
