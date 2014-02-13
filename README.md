@@ -16,7 +16,7 @@ Configure IDE:
 http://kosiara87.blogspot.com/2014/02/intellij-13-scaloid-maven-3.html
 http://kosiara87.blogspot.com/2014/02/intellij-13-proguard-android.html
 
-To compile from maven use:
-mvn clean
+To compile from maven use: <br/>
+mvn clean <br/>
 mvn package -Prelease -f pom_javaOnly.xml <br/>
 mvn package -Prelease
