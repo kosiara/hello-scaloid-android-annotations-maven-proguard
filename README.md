@@ -7,9 +7,9 @@ Proguard configuration file: /proguard.cfg
 
 In order to run the project correctly you need to configure the project to run scaloid.
 
-1. Run mvn clean; mvn package -Prelease
-2. Configure IntelliJ 13 to run with SCALA
-3. Configure IntelliJ to compile Android Annotations
+1. Configure IntelliJ 13 to run with SCALA
+2. Configure IntelliJ to compile Android Annotations
+3. How-to on compiling from maven is attached below
 
 Configure IDE:
 
