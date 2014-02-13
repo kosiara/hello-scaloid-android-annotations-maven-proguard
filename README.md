@@ -27,3 +27,10 @@ mvn clean <br/>
 mvn package -Prelease -f pom_javaOnly.xml <br/>
 mvn package -Prelease <br/><br/>
 Remember to add your keys in ".keystore" directory inside the root directory of the project.
+
+Project contains:
+- main start Activity written in SCALA
+- second activity written in SCALA which uses Java classes (example of JAVA & SCALA integration)
+- third activity is written in Java and uses Android Annotations
+- all in obsfuscated & profiled with ProGuard
+- project compiles from maven
