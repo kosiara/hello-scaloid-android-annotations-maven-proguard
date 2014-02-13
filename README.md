@@ -6,6 +6,7 @@ A combo project combining: <b>scaloid, android annotations, maven and proguard. 
 <b>Proguard</b> configuration file: /proguard.cfg
 
 In order to <b>run</b> the project correctly you need to: 
+
 1. Configure IntelliJ 13 to run with SCALA
 2. Configure IntelliJ to compile Android Annotations
 3. How-to on compiling from maven is attached below
