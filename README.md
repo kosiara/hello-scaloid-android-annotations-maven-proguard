@@ -18,5 +18,5 @@ http://kosiara87.blogspot.com/2014/02/intellij-13-proguard-android.html
 
 To compile from maven use:
 mvn clean
-mvn package -Prelease -f pom_javaOnly.xml
+mvn package -Prelease -f pom_javaOnly.xml <br/>
 mvn package -Prelease
