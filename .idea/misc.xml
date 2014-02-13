@@ -14,7 +14,12 @@
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="Android 2.2 Google APIs" project-jdk-type="Android SDK">
+  <component name="ProjectFileVersion">
+    <performed-conversions>
+      <converter id="android-proguard-options" />
+    </performed-conversions>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="Android 4.2.2 Platform 1.7" project-jdk-type="Android SDK">
     <output url="file://$PROJECT_DIR$/classes" />
   </component>
 </project>
